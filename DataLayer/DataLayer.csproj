@@ -1,0 +1,73 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Models\**" />
+    <EmbeddedResource Remove="Models\**" />
+    <None Remove="Models\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="Migrations\20231024093837_InitDb.cs" />
+    <Compile Remove="Migrations\20231024093837_InitDb.Designer.cs" />
+    <Compile Remove="Migrations\20231101132517_RepairPlanTime.cs" />
+    <Compile Remove="Migrations\20231101142849_RepairSeedData.cs" />
+    <Compile Remove="Migrations\20231101142849_RepairSeedData.Designer.cs" />
+    <Compile Remove="Migrations\20231101143116_RepairSeedData2.cs" />
+    <Compile Remove="Migrations\20231101143116_RepairSeedData2.Designer.cs" />
+    <Compile Remove="Migrations\20231101144655_RepairSeedData3.cs" />
+    <Compile Remove="Migrations\20231101144655_RepairSeedData3.Designer.cs" />
+    <Compile Remove="Migrations\20231102113759_EditSeedData.cs" />
+    <Compile Remove="Migrations\20231102113759_EditSeedData.Designer.cs" />
+    <Compile Remove="Migrations\20231106143916_AddPriorityToUserStrategyCopyTradeMember.cs" />
+    <Compile Remove="Migrations\20231106143916_AddPriorityToUserStrategyCopyTradeMember.Designer.cs" />
+    <Compile Remove="Migrations\20231110234405_planItem.cs" />
+    <Compile Remove="Migrations\20231110234405_planItem.Designer.cs" />
+    <Compile Remove="Migrations\20231111005724_edit-planItem.cs" />
+    <Compile Remove="Migrations\20231111005724_edit-planItem.Designer.cs" />
+    <Compile Remove="Migrations\20231112200429_updet_PlanFeature_Enum.cs" />
+    <Compile Remove="Migrations\20231112200429_updet_PlanFeature_Enum.Designer.cs" />
+    <Compile Remove="Migrations\20231115015554_UpdateSeedData.cs" />
+    <Compile Remove="Migrations\20231115015554_UpdateSeedData.Designer.cs" />
+    <Compile Remove="Migrations\20231118011937_Add_PNL_TO_CopyTradeMember.cs" />
+    <Compile Remove="Migrations\20231118011937_Add_PNL_TO_CopyTradeMember.Designer.cs" />
+    <Compile Remove="Migrations\20231118023821_edit_PNL_CopyTradeMember.cs" />
+    <Compile Remove="Migrations\20231118023821_edit_PNL_CopyTradeMember.Designer.cs" />
+    <Compile Remove="Migrations\20231123180003_DeletePositionsTable.cs" />
+    <Compile Remove="Migrations\20231123180003_DeletePositionsTable.Designer.cs" />
+    <Compile Remove="Migrations\20231125120100_add_userExchangeId_To_UserExchangeApi.cs" />
+    <Compile Remove="Migrations\20231125120100_add_userExchangeId_To_UserExchangeApi.Designer.cs" />
+    <Compile Remove="Migrations\20231125124004_rename_userExchangeId_To_UserExchangeApi.cs" />
+    <Compile Remove="Migrations\20231125124004_rename_userExchangeId_To_UserExchangeApi.Designer.cs" />
+    <Compile Remove="Migrations\20231126093346_edit_userStrategyCopyTradeMember.cs" />
+    <Compile Remove="Migrations\20231126093346_edit_userStrategyCopyTradeMember.Designer.cs" />
+    <Compile Remove="Migrations\SQLServerContextModelSnapshot.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Migrations\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.23" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="6.0.23">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.23" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="6.0.23">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CoreLayer\CoreLayer.csproj" />
+  </ItemGroup>
+
+</Project>
